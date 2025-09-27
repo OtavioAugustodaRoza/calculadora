@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('og-default.jpg');
+    background-position: 50%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculadora {
+    width: 300px;
+    padding: 20px;
+    background: #272121;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+  }
+  
+
+  .resultado {
+    background: #47aa55;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
+  }
+  
+
+  .linha {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+
+  button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+
+
+  }
+  
+  button:hover {
+    background: #666;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+
+  button.operador {
+    background: #ff9500;
+  }
+  
+  button.operador:hover {
+    background: #e08600;
+  }
+  
+
+  button.reset {
+    background: #f44336;
+  }
+  
+  button.reset:hover {
+    background: #d7372a;
+  }
+  
+
+  button.voltar {
+    background: #2196f3;
+  }
+  
+  button.voltar:hover {
+    background: #1e88e5;
+  }
+  
